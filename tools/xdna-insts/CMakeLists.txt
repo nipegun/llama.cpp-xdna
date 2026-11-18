@@ -1,0 +1,7 @@
+set(TARGET llama-xdna-insts)
+add_executable(${TARGET} xdna-insts.cpp)
+if(LLAMA_TOOLS_INSTALL)
+    install(TARGETS ${TARGET} RUNTIME)
+endif()
+target_link_libraries(${TARGET} PRIVATE xdna-insts)
+target_compile_features(${TARGET} PRIVATE cxx_std_17)
