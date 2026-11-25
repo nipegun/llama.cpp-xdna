@@ -1,0 +1,42 @@
+xdna2-moe 1
+array 8 6 1
+kernel xdna2_moe_gemv
+object 9216 4608
+x 32256 27648
+rows 24
+chunks 1136
+segments 2
+chain 1664
+formats bfp16 q4k q5k q6k q8_0 q5_1
+stream W 0 0 0
+stream W 1 0 1
+stream W 2 1 0
+stream W 3 1 1
+stream W 4 2 0
+stream W 5 2 1
+stream W 6 3 0
+stream W 7 3 1
+stream W 8 4 0
+stream W 9 4 1
+stream W 10 5 0
+stream W 11 5 1
+stream W 12 6 0
+stream W 13 6 1
+stream W 14 7 0
+stream W 15 7 1
+stream Y 0 0 0
+stream Y 1 0 1
+stream Y 2 1 0
+stream Y 3 1 1
+stream Y 4 2 0
+stream Y 5 2 1
+stream Y 6 3 0
+stream Y 7 3 1
+stream Y 8 4 0
+stream Y 9 4 1
+stream Y 10 5 0
+stream Y 11 5 1
+stream Y 12 6 0
+stream Y 13 6 1
+stream Y 14 7 0
+stream Y 15 7 1

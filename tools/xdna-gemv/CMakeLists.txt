@@ -1,0 +1,7 @@
+set(TARGET llama-xdna-gemv)
+add_executable(${TARGET} xdna-gemv.cpp)
+if(LLAMA_TOOLS_INSTALL)
+    install(TARGETS ${TARGET} RUNTIME)
+endif()
+target_link_libraries(${TARGET} PRIVATE xdna-runner ggml-base)
+target_compile_features(${TARGET} PRIVATE cxx_std_17)
